@@ -1,10 +1,10 @@
-import Info2 from "./Component/Info";
+import Userlist from "./Component/Userlist";
 
 function App() {
 
   return (
     <div>
-      <Info2/>
+      <Userlist/>
   </div>
   );
 
