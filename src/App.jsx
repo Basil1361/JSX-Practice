@@ -1,10 +1,11 @@
-import Userlist from "./Component/Userlist";
+import Parentv3 from "./Component/Propsv3";
+
 
 function App() {
 
   return (
     <div>
-      <Userlist/>
+      <Parentv3/>
   </div>
   );
 
