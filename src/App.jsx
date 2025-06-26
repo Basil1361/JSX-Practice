@@ -1,11 +1,10 @@
-import Parentv3 from "./Component/Propsv3";
 
+import Greet3Parent from "./Component/Greet3Parent";
 
 function App() {
-
   return (
     <div>
-      <Parentv3/>
+      <Greet3Parent/>
   </div>
   );
 

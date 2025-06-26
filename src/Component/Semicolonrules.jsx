@@ -1,7 +1,7 @@
 // Semicolons are unecessary to add because normally when HTML -> JS, the code will be 
 
 
-
+/*
 // 1) when the next line starts with [ or ( :
 const foo = 3
 const bar = foo
@@ -11,3 +11,5 @@ const bar = foo
 const foo = 3;
 const bar = foo(1 + 2).toString();  
 //              ^^^ suddenly you’re *calling* foo!
+
+*/
