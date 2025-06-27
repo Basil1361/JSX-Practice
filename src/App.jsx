@@ -1,10 +1,9 @@
-
-import Greet3Parent from "./Component/Greet3Parent";
+import Design2 from "./Component/Design2";
 
 function App() {
   return (
     <div>
-      <Greet3Parent/>
+      <Design2/>
   </div>
   );
 
