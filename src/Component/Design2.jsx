@@ -1,6 +1,7 @@
 // with CSS styling
 
-import './index.css'
+import "../Index.css"
+import { GiPokerHand } from "react-icons/gi";
 
 const Design2 = () => {
 // const styles = {color: 'cyan', backgroundColor : 'crimson', padding : "2rem",}
@@ -8,7 +9,8 @@ const text = "Hello World!"
 
   return (
     <section>
-    <h1>{text}</h1>
+    <h1 color>{text}</h1>
+    <GiPokerHand/>
     </section>
   )
 }

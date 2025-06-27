@@ -1,9 +1,13 @@
-import Design2 from "./Component/Design2";
+import Icon from "./Component/Icon";
+import ProfileCard from "./Component/ProfileCard";
+import StyledCard from "./Component/StyledCard";
 
 function App() {
   return (
     <div>
-      <Design2/>
+      <StyledCard/>
+      <ProfileCard/>
+      <Icon/>
   </div>
   );
 
