@@ -1,9 +1,9 @@
-import Counter3 from "./Component/Counter3";
+import Export from "./Folder/Export";
 
 function App() {
   return (
     <div>
-      <Counter3/>
+      <Export/>
   </div>
   );
 
