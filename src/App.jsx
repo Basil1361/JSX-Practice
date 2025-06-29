@@ -1,13 +1,9 @@
-import Icon from "./Component/Icon";
-import ProfileCard from "./Component/ProfileCard";
-import StyledCard from "./Component/StyledCard";
+import Counter3 from "./Component/Counter3";
 
 function App() {
   return (
     <div>
-      <StyledCard/>
-      <ProfileCard/>
-      <Icon/>
+      <Counter3/>
   </div>
   );
 

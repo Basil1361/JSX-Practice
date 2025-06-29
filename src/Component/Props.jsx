@@ -18,8 +18,7 @@ const Child = (props) => {
     return(
         <div>
             <section>
-                <img src={props.image} alt={props.message || 'child image'} /* || function is an "or" function
-                alt is for the message in case the image is not loaded*/
+                <img src={props.image} alt={props.message || 'child image'} 
                 width= {props.size} 
                 style={{ height: 'auto' }} 
                 />
