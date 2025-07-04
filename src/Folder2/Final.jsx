@@ -1,10 +1,10 @@
-import Practice2 from "./Practice2"
+import Practice4 from "./Practice4"
 
 
 const Final = () => {
   return (
     <div>
-        <Practice2/>
+        <Practice4/>
     </div>
   )
 }
