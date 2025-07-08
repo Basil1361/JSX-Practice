@@ -14,7 +14,7 @@ const CopyInput = () => {
     input.trim() ? (
     navigator.clipboard.writeText(input).then(() => {
         setCopied(false),
-        setTimeout(() => setCopied(true),200)
+        setTimeout(() => setCopied(true),2000)
     }))
     : 
     null
@@ -28,7 +28,7 @@ const CopyInput = () => {
         onChange={(e) => setInput(e.target.value)}
       />
       <button onClick={copy} style = {styles}>Copy</button>
-      <Popup whileCopy = {copied}></Popup>
+      <Popup whileCopy = {copied} text={input}></Popup>
     </div>
   );
 };

@@ -1,9 +1,11 @@
-import Final2 from "./Folder3/Final2";
+
+import FetchData from "./Folder4/FetchData";
+
 
 function App() {
   return (
     <div>
-      <Final2/>
+      <FetchData/>
   </div>
   );
 

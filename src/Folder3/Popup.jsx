@@ -1,10 +1,10 @@
-const Popup = ({whileCopy}) => {
+const Popup = ({whileCopy, text}) => {
   const styles = {bottom : "1rem", position : "absolute"} 
   return (
     <section>
       {whileCopy && (
       <p style = {styles}>
-        Copied
+        {text}
       </p>
     )}
     </section>
