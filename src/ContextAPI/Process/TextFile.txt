@@ -1,6 +1,9 @@
-import { Data , Data1 } from "./Compilev2"
+Problem with this:
 
-const ThirdFilev2 = () => {
+1. If there are too much data, you need to nest lots of function, and calling them 
+2. Solution: useContext
+
+/*
   return (
     <Data.Consumer>
         {(name) => {
@@ -16,6 +19,7 @@ const ThirdFilev2 = () => {
         }}
     </Data.Consumer>
   )
-}
 
-export default ThirdFilev2
+*/ 
+
+For two data's, that's so long!

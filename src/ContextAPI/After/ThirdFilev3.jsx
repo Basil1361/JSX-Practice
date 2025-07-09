@@ -1,4 +1,4 @@
-import { Data , Data1 } from "./Compilev2"
+import { Data , Data1 } from "../Process/Compilev2"
 
 const ThirdFilev2 = () => {
   return (
