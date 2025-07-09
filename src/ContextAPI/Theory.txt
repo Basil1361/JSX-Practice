@@ -1,8 +1,13 @@
-The purpose of using useContext: 
+Problem
+1. Transfering data to multiple components
 
-1. x need to use props
-2. faster to transfer data to thousands of components
-3. good especially when components are deeply nested
+Solutiom:
+2. Use props or portal 
 
-Part 1: 
-Transfer file without props first
+Problem of the Solution: 
+1. too many components
+2. slow transfer of data to thousands of components
+3. components are deeply nested
+
+Solution of the Problem: 
+1. useContext
