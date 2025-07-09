@@ -1,11 +1,10 @@
-
-import FetchData from "./Folder4/FetchData";
+import Compile from "./ContextAPI/Compile";
 
 
 function App() {
   return (
     <div>
-      <FetchData/>
+      <Compile/>
   </div>
   );
 

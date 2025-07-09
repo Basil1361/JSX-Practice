@@ -1,0 +1,8 @@
+The purpose of using useContext: 
+
+1. x need to use props
+2. faster to transfer data to thousands of components
+3. good especially when components are deeply nested
+
+Part 1: 
+Transfer file without props first
