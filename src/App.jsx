@@ -1,10 +1,10 @@
-import Compile from "./ContextAPI/BeforeAPI/Compile";
+import Compilev2 from "./ContextAPI/Process/Compilev2"
 
 
 function App() {
   return (
     <div>
-      <Compile/>
+      <Compilev2/>
   </div>
   );
 
