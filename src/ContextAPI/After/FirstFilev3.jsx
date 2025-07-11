@@ -1,11 +1,12 @@
-import SecondFilev2 from "../Process/SecondFilev2"
+import SecondFilev3 from "./SecondFilev3"
 
-const FirstFilev2 = () => {
+
+const FirstFilev3 = () => {
   return (
     <div>
-        <SecondFilev2/>
+        <SecondFilev3/>
     </div>
   )
 }
 
-export default FirstFilev2
+export default FirstFilev3

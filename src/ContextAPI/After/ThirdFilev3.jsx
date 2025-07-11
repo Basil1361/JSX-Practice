@@ -1,21 +1,15 @@
-import { Data , Data1 } from "../Process/Compilev2"
+import { Data , Data1 } from "../After/Compilev3"
+import { useContext } from "react"
 
-const ThirdFilev2 = () => {
-  return (
-    <Data.Consumer>
-        {(name) => {
-            return (
-                <Data1.Consumer>
-                    {(age) => {
-                        return(
-                            <p>My name is {name}, and I'm {age} years old</p>
-                        )
-                    }}
-                </Data1.Consumer>
-            )
-        }}
-    </Data.Consumer>
+const ThirdFilev3 = () => {
+  const username = useContext(Data)
+  const age = useContext(Data1)
+
+  return(
+    <p>
+        My name is {username} and I'm {age} years old
+    </p>
   )
 }
 
-export default ThirdFilev2
+export default ThirdFilev3

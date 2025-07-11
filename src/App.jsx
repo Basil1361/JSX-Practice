@@ -1,15 +1,9 @@
-import Compilev2 from "./ContextAPI/Process/Compilev2"
-
+import Wrapper from "./Folder5/Wrapper";
 
 function App() {
   return (
-    <div>
-      <Compilev2/>
-  </div>
+    <Wrapper />
   );
+}
 
-};
-
-
-
-export default App
+export default App;
