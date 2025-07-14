@@ -1,8 +1,12 @@
-import Wrapper from "./Folder5/Wrapper";
+
+import Counter from "./useReducer/Counter";
+
 
 function App() {
   return (
-    <Wrapper />
+    <section>
+    <Counter/>
+    </section>
   );
 }
 

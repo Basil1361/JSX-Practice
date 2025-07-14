@@ -1,5 +1,5 @@
 import ContextTest from "./ContextTest";
-import Children    from "./Children";
+import Children    from "./UpdateState";
 
 const Wrapper = () => (
   <ContextTest>

@@ -1,17 +1,23 @@
 import { createContext } from "react";
 import { useState } from "react";
 
-export const Contextinfo = createContext();
+export const NameData = createContext()
+export const AgeData = createContext()
 
 const ContextTest = ({ children }) => {
-  const [info, setInfo] = useState({ name: "John", age: 17 });
-  const newInfo = newName => setInfo({ name: newName, age: info.age });
+  const [name, setName] = useState({ name: "John"})
+  const [age, setAge] = useState({ age: 17 })
+
+const updateName = (newName) => setName({ name: newName })
+const updateAge = (newAge) => setAge({ age: newAge })
 
   return (
-    <Contextinfo.Provider value={{ info, newInfo }}>
-      {children}
-    </Contextinfo.Provider>
-  );
-};
+    <NameData.Provider value = {{name, updateName}}>
+      <AgeData.Provider value = {{age, updateAge}}>
+        {children}
+      </AgeData.Provider>
+    </NameData.Provider>
+  )
+}
 
-export default ContextTest;
+export default ContextTest
