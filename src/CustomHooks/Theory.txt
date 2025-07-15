@@ -1,0 +1,5 @@
+Let's say you want to use a Hook many times:
+
+Solution: 
+Define a hook in a file, use params to add stuff in another file
+

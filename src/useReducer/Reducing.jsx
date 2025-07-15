@@ -2,14 +2,16 @@ const initialState = {count : 0}
 
 function Reducing (state, action) {
     switch (action.type) {
-        case 'custom_increment':
-            return {count : state.count + state.payload}
+        case 'increment':
+            return {count : state.count + 1}
 
-        case 'custom_decrement':
-            return {count : state.count - state.payload}
+        case 'decrement':
+            return {count : state.count - 1}
 
+        case 'custom':
+            return {count : state.count + action.payload}
         default:
-            return {state}
+            return state
 
     }
 }

@@ -1,11 +1,10 @@
 
-import Counter from "./useReducer/Counter";
-
+import CustomId from "./UseID/CustomId";
 
 function App() {
   return (
     <section>
-    <Counter/>
+    <CustomId/>
     </section>
   );
 }

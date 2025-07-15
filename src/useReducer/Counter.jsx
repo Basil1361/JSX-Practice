@@ -12,28 +12,53 @@ const Counter = () => {
     margin: "3px",
   };
 
-const styles2 = {
+  const styles2 = {
     width: "30px",
     height: "30px",
     textAlign: "center",
     padding: 0,
     margin: "3px",
   };
-  const Submission = (e) => {
-    e.preventDefault()
-  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleIncrement = () => {
+    dispatch({ type: "increment", payload: +input });
+    setInput("");
+  };
+
+  const handleDecrement = () => {
+    dispatch({ type: "decrement", payload: +input });
+    setInput("");
+  };
+
+   const handleCustom = () => {
+    dispatch({ type: "custom", payload: +input });
+    setInput("");
+  }; 
+
   return (
     <div>
       <h2>Count: {state.count}</h2>
-      <p>Add Something: </p>
-      <form onSubmit={Submission}>
+      <form onSubmit={handleSubmit}>
         <input
           value={input}
           type="number"
           style={styles}
           onChange={(e) => setInput(e.target.value)}
-        ></input>
-        <button type = "submit" style = {styles2}>+</button>
+        />
+        <button onClick={handleCustom} type="submit" style={styles}>Enter</button>
+        <br />
+        <p> Plus by 1</p>
+        <button onClick={handleIncrement} type="submit" style={styles2}>
+          +
+        </button>
+        <p> Minus by 1</p>
+        <button onClick={handleDecrement} type="submit" style={styles2}>
+          -
+        </button>
       </form>
     </div>
   );
